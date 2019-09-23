@@ -1,0 +1,11 @@
+use Basketbal;
+INSERT INTO Bestuurslid (lidnummer, begin_datum, eind_datum, functie) VALUES (107, '2007-01-01', '2007-12-31', 'Secretaris');
+INSERT INTO Bestuurslid (lidnummer, begin_datum, eind_datum, functie) VALUES (108, '2008-01-01', '2008-12-31', 'Lid');
+INSERT INTO Bestuurslid (lidnummer, begin_datum, eind_datum, functie) VALUES (109, '2009-01-01', '2009-12-31', 'Penningmeester');
+INSERT INTO Bestuurslid (lidnummer, begin_datum, eind_datum, functie) VALUES (110, '2010-01-01', NULL, 'Voorzitter');
+INSERT INTO Bestuurslid (lidnummer, begin_datum, eind_datum, functie) VALUES (111, '2007-01-01', '2008-12-31', 'Voorzitter');
+INSERT INTO Leeftijd (lidnummer, leeftijd) VALUES (107, 14);
+INSERT INTO Leeftijd (lidnummer, leeftijd) VALUES (108, 16);
+INSERT INTO Leeftijd (lidnummer, leeftijd) VALUES (109, 56);
+INSERT INTO Leeftijd (lidnummer, leeftijd) VALUES (110, 43);
+INSERT INTO Leeftijd (lidnummer, leeftijd) VALUES (111, 34);
