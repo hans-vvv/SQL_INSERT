@@ -22,7 +22,7 @@ def info_from_xls(filename):
 
         #Read rows
         for row in sheet.iter_rows():
-            table_row = [cell.value for cell in row]
+            table_row = [str(cell.value) for cell in row]
             insert_info[table_name].append(table_row)
 
     return insert_info
