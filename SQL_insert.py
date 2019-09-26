@@ -30,7 +30,7 @@ def info_from_xls(filename):
 
 def create_insert_script(insert_info):
 
-    with open('Insert-script.txt', 'w') as f:
+    with open('Insert-script.sql', 'w') as f:
 
         scheme_name = insert_info['scheme_name']
         print('use ' + scheme_name + ';', file=f)
@@ -47,9 +47,9 @@ def create_insert_script(insert_info):
             for col_name in insert_info[table_name][0]:
                 if '-NQ' in col_name:
                     col_name = col_name.split('-')[0]
-                    col_header.append(col_name.lower())
+                    col_header.append(col_name)
                 else:
-                   col_header.append(col_name.lower()) 
+                   col_header.append(col_name) 
 
             # print SQL INSERT statements
             for index, row in enumerate(insert_info[table_name]):
